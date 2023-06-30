@@ -1,0 +1,928 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.content-wrapper {
+  width: 90%;
+  margin: 40px 0;
+  /* all content-wrappers */
+}
+
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+  font-size: 1.125em;
+  font-weight: bold;
+  list-style: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.3em;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+
+/*--Base Header - Footer Styles--*/
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #202322;
+}
+
+/* Header Styles */
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+header .header-divider {
+  width: 90%;
+  border: 0.05px solid #3a3a3a;
+  margin: 10px 0;
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  /*align-items: center; -- flex-start as default so no need to define*/
+  width: 100%;
+  /* not 30% because of space-around setting */
+  text-transform: uppercase;
+  padding: 0;
+  margin: 10px;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* Footer Styles */
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 45px 0;
+  color: #e2e3ed;
+  text-align: center;
+}
+
+footer h4 {
+  padding: 20px 0;
+  margin: 0;
+}
+
+footer .social-icons {
+  /* entire div */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+footer .social-icons p {
+  /* individual icons only */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #527158;
+  border-radius: 22px;
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons i {
+  font-size: 1.3em;
+  color: #e2e3ed;
+}
+
+footer p {
+  margin: 0 0 30px 0;
+}
+
+/*--Mobile Styles - Homepage--*/
+
+.hero-area h1 {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #e2e3ed;
+}
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  /*align-items: flex-start; -- flex-start as default so no need to define*/
+  flex-flow: row wrap;
+  /*padding: 50px 0;
+  margin-bottom: 50px;*/
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
+  flex-flow: row wrap;
+  height: 500px;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=email] {
+  /* no spaces between input and brackets */
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  /*align-items: center; -- no need because it's in column*/
+  flex-flow: row wrap;
+  color: #e2e3ed;
+  background: url(../img/unplugged-retreat-features.jpg) center no-repeat #333;
+  background-size: cover;
+}
+
+.features h2 {
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.features article {
+  width: 65%;
+  padding: 30px 0;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  /*align-items: center; no need because it's in column*/
+  flex-flow: row wrap;
+  color: #e2e3ed;
+  background-color: #2a423a;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1em;
+}
+
+.reviews h3 {
+  width: 60%;
+  margin: 20px 0;
+}
+
+.reviews figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*--Mobile Styles - About--*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
+}
+
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #2a423a;
+  color: #e2e3ed;
+}
+
+/*--Mobile Styles - FAQ--*/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 30px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1em;
+}
+
+.faq-content {
+  margin-bottom: 45px;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  /* global styles */
+
+  .hero-area h1 {
+    font-size: 2.5em;
+    width: 80%;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  footer h4,
+  .contact-section h4 {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+
+  footer p {
+    line-height: 1.125em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 15.75px;
+  }
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 70px 0;
+  }
+
+  /* header */
+  header {
+    padding: 35px 0;
+    justify-content: space-around;
+    /*why space-around?*/
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 30%;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .hero-area {
+    height: 500px;
+  }
+
+  /* aside */
+
+  aside .content-wrapper {
+    /* override above settings */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 50px 0;
+  }
+
+  aside .form-description,
+  aside .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* features */
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    /* ?? */
+  }
+
+  .features-item-description {
+    width: 61%;
+  }
+
+  /* reviews */
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 45%;
+    /* moves text to the right */
+  }
+
+  .reviews figure {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .reviews h3 {
+    width: 80%;
+    margin: 0;
+  }
+
+  .reviews h2 {
+    width: 80%;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  /* footer */
+
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px;
+  }
+
+  footer .contact {
+    width: 30%;
+    margin: 0;
+  }
+
+  footer .social {
+    width: 30%;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /* ---ABOUT-- */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 45.6%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .contact-section h2 {
+    width: 80%;
+    margin: 0;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* ---FAQ-- */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1200px) {
+
+  /* global styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  .faq h2,
+  .mission h2 {
+    font-size: 3em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1.125em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.5em;
+  }
+
+  /* header */
+  header {
+    padding: 15px 0;
+  }
+
+  /* hero */
+  .hero-area h1 {
+    font-size: 3.7em;
+    line-height: 1em;
+    padding-top: 20px;
+  }
+
+  /* aside */
+  aside .form-description,
+  aside .form {
+    width: 30%;
+    margin: 0;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  /* features */
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 33%;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .reviews article {
+    padding: 50px 0;
+  }
+
+  /* --ABOUT-- */
+
+  .mission h2 {
+    width: 90%;
+  }
+
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 37.5%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .contact-section h2 {
+    width: 70%;
+    margin: 0;
+  }
+
+  /* --FAQ-- */
+  .faq h2 {
+    width: 80%;
+  }
+
+
+  /* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+  @media print {
+
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+
+    /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+
+    pre {
+      white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+
+    /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+    thead {
+      display: table-header-group;
+    }
+
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
